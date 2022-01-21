@@ -1,0 +1,10 @@
+[webservers]
+node1 ansible_host=172.31.88.28 ansible_user=ec2-user
+node2 ansible_host=172.31.18.221 ansible_user=ec2-user
+[ubuntuservers]
+node3 ansible_host=172.31.83.118 ansible_user=ubuntu
+[devopsserver]
+node4 ansible_host=172.31.90.244 ansible_user=ubuntu
+
+[all:vars]
+ansible_ssh_private_key_file=/home/ec2-user/.ssh/id_rsa
